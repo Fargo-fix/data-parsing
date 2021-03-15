@@ -27,7 +27,6 @@ class Chief:
             id = len(manager_db.c_id) + 1
             
             man.run()
-            # time.sleep(2)
 
             rate = man.euro
             entities = (id, date_request, time_request, rate)

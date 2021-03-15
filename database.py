@@ -35,13 +35,7 @@ class DataBase:
         self.db.commit()
 
     def count_id(self):
+        # Count id lines
         self.cursor.execute('SELECT id FROM Exchange_Rate')
         self.c_id = self.cursor.fetchall()
 
-# entities = (id, date_request, time_request, rate)
-
-# manager = DataBase()
-# manager.sql_connection()
-# manager.create_new_table()
-# manager.write_to_table(entities)
-# manager.update_table()
