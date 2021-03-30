@@ -17,9 +17,9 @@ class Chief:
 
         id = 0
 
-        now = datetime.now()
-        date_request = now.strftime('%d-%m-%Y')
-        time_request = now.strftime('%H:%M:%S')
+        self.now = datetime.now()
+        date_request = self.now.strftime('%d-%m-%Y')
+        time_request = self.now.strftime('%H:%M:%S')
         
         while not self.stop:
 
